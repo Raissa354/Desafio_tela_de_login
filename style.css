@@ -1,0 +1,157 @@
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* FUNDO FLORAL */
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #fff0f5;
+
+    background-image:
+        radial-gradient(circle at center, #d97898 3px, transparent 4px),
+        radial-gradient(ellipse 7px 12px at 50% 18%, #f4a6bd 98%, transparent 100%),
+        radial-gradient(ellipse 7px 12px at 82% 40%, #f4a6bd 98%, transparent 100%),
+        radial-gradient(ellipse 7px 12px at 70% 78%, #f4a6bd 98%, transparent 100%),
+        radial-gradient(ellipse 7px 12px at 30% 78%, #f4a6bd 98%, transparent 100%),
+        radial-gradient(ellipse 7px 12px at 18% 40%, #f4a6bd 98%, transparent 100%);
+
+    background-size: 90px 90px;
+
+    font-family: Georgia, serif;
+    color: #9b4265;
+    padding: 20px;
+}
+
+/* TÍTULO */
+h1 {
+    color: #d94f83;
+    font-size: 36px;
+    text-align: center;
+    text-shadow: 2px 2px 0px #fff;
+    margin-bottom: 12px;
+}
+
+/* SUBTÍTULO */
+p {
+    color: #b65d7d;
+    font-size: 15px;
+    text-align: center;
+    margin-bottom: 28px;
+}
+
+/* CARTÃO DE LOGIN */
+form {
+    width: 350px;
+    max-width: 100%;
+    padding: 40px 32px;
+
+    background-color: #fffafd;
+    border: 2px solid #f3b6cc;
+    border-radius: 28px;
+
+    box-shadow:
+        0 8px 0 #f2b6cc,
+        0 12px 25px rgba(190, 85, 125, 0.18);
+
+    position: relative;
+}
+
+/* LACINHO DECORATIVO */
+form::before {
+    content: "୨୧";
+    position: absolute;
+    top: -24px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    color: #d94f83;
+    background-color: #fff0f5;
+    padding: 0 12px;
+    font-size: 32px;
+}
+
+/* CAMPOS */
+form div {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 22px;
+}
+
+/* LABELS */
+label {
+    color: #b94f78;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 9px;
+}
+
+/* INPUTS */
+input {
+    padding: 13px;
+    border: 2px solid #f2c1d2;
+    border-radius: 14px;
+
+    background-color: #fff4f8;
+    color: #9b4265;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+
+    outline: none;
+    transition: 0.3s;
+}
+
+input:focus {
+    border-color: #e879a2;
+    background-color: #fff;
+    box-shadow: 0 0 0 4px #fce0eb;
+}
+
+/* BOTÃO */
+button {
+    width: 100%;
+    padding: 14px;
+
+    border: 2px solid #e879a2;
+    border-radius: 16px;
+
+    background: #f4a6c1;
+
+    color: #873653;
+    font-family: Georgia, serif;
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 0 #f2c1d2;
+    background: #e879a2;
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 30px;
+    }
+
+    form {
+        width: 100%;
+        padding: 35px 24px;
+    }
+}
